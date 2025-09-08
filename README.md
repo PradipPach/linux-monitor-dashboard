@@ -13,11 +13,18 @@ linux-monitor-dashboard/
 └── README.md
 // ec2
 
-sudo yum install python -y
+sudo yum install python3 -y
 sudo yum install python3-tkinter
-python3 --version
-sudo yum install pip -y
-sudo pip install flask 
+sudo yum  install pip -y
+sudo yum install git -y
+git config --global user.name "pradip pachapol"
+git config --global user.email "pachapolp2932002@gmail.com"
+git clone https://github.com/PradipPach/linux-monitor-dashboard.git
+cd linux-monitor-dashboard
+pip3 install flask
+pip install -r requirements.txt
+python3 web_ui.py
+
 // ubuntu
 
 sudo apt install git -y
